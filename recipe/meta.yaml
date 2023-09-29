@@ -1,5 +1,5 @@
 {% set name = "django-super-inlines" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 303f1bd737a4d3e81eed84bdda52ae171efc47ab3a799569abdb44cc7f253ca5
+  sha256: d9c76086de1e9858e609b6ec8b0247e1a287bccaa0dbdd0b1602a0ca7d5b78ac
 
 build:
-  number: 1005
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
 
 requirements:
